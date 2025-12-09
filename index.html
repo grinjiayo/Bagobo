@@ -10,6 +10,35 @@
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
   <style>
+    .inabal-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;        /* spacing between pictures */
+  margin: 15px 0;
+  flex-wrap: wrap;  /* allows resizing on smaller screens */
+  }
+
+  .inabal-gallery img {
+    width: 30%;       /* fits 3 images horizontally */
+    max-width: 280px; /* prevents oversized images */
+    border-radius: 8px;
+    object-fit: cover;
+  }
+
+    .video-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;       /* space between videos */
+      flex-wrap: wrap; /* allows wrapping on small screens */
+      margin: 20px 0;
+    }
+
+    .video-row iframe {
+      width: 48%;      /* two videos side-by-side */
+      height: 250px;   /* adjust height */
+      border-radius: 10px;
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
     :root {
@@ -959,8 +988,11 @@
 
   <h4>2. Vocal Music:</h4>
   <ul>
-    <li id="content"><strong>Chants (Tud-om/Ugom):</strong> Ritualistic, often epic-length chants performed by the baylan (shaman) or mabalian (priestess). These are not sung with melody but in a dramatic, rhythmic, heightened speech pattern. They invoke spirits, narrate mythological stories (like the Tuwaang epic), and are central to healing and agricultural rites.</li>
-    <li id="content"><strong>Lullabies (Uyayi) and Courting Songs:</strong> Everyday songs passed down through generations.</li>
+   <li id="content"><strong>Chants (Tud-om/Ugom):</strong> 
+    Ritualistic, often epic-length chants performed by the baylan (shaman) or mabalian (priestess). These are not sung with melody but in a dramatic, rhythmic, heightened speech pattern. They invoke spirits, narrate mythological stories (like the Tuwaang epic), and are central to healing and agricultural rites.
+  </li>
+  <br>
+  <li id="content"><strong>Lullabies (Uyayi) and Courting Songs:</strong> Everyday songs passed down through generations.</li>
   </ul>
 
   <br>
@@ -994,11 +1026,63 @@
 
   <br>
   <h3>The Integration: Costume, Context, and Meaning</h3>
-  <ul>
-    <li id="content"><strong>Costume as Amplifier:</strong> Dances are performed in full traditional regalia—vibrant inabal weave, elaborate beadwork, brass belts, and feathered headdresses. The swaying of bead tassels, the clinking of brass bells, and the rustle of abaca fabric become part of the music and visual spectacle, emphasizing the dancer's status and the ritual's importance.</li>
-    <li id="content"><strong>Sacred Context:</strong> Most significant music and dance occur within rituals led by the baylan. The rhythm of the agung is believed to call the spirits, and the dancer's movements become a medium for spiritual communication.</li>
-    <li id="content"><strong>Preservation and Performance:</strong> Today, these traditions are kept alive by cultural masters and are proudly performed at community gatherings, schools, and cultural festivals like the Kagmayen Festival in Davao del Sur, serving as a powerful tool for cultural education and identity pride among younger generations.</li>
-  </ul>
+<ul>
+  <li id="content"><strong>Costume as Amplifier:</strong> 
+    Dances are performed in full traditional regalia—vibrant inabal weave, elaborate beadwork, brass belts, and feathered headdresses. The swaying of bead tassels, the clinking of brass bells, and the rustle of abaca fabric become part of the music and visual spectacle, emphasizing the dancer's status and the ritual's importance.
+  </li>
+  <li id="content"><strong>Sacred Context:</strong> 
+    Most significant music and dance occur within rituals led by the baylan. The rhythm of the agung is believed to call the spirits, and the dancer's movements become a medium for spiritual communication.
+  </li>
+  <li id="content"><strong>Preservation and Performance:</strong> 
+    Today, these traditions are kept alive by cultural masters and are proudly performed at community gatherings, schools, and cultural festivals like the Kagmayen Festival in Davao del Sur, serving as a powerful tool for cultural education and identity pride among younger generations.
+  </li>
+</ul>
+
+<!-- Embedded YouTube Video -->
+<div class="video-row">
+
+  <!-- Video 1 -->
+  <iframe 
+      src="https://www.youtube.com/embed/QpAEwvM8kUk"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+  </iframe>
+
+  <!-- Video 2 -->
+  <iframe 
+      src="https://www.youtube.com/embed/7VywvCXO3d0"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+  </iframe>
+
+</div>
+
+<!-- Row 2 (single or add more videos horizontally) -->
+<div class="video-row">
+
+  <!-- Video 3 -->
+  <iframe 
+      src="https://www.youtube.com/embed/Ro6eZX2h9s8"
+      title="YouTube video player 3"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+  </iframe>
+
+   <iframe 
+      src="https://www.youtube.com/embed/n7xoUOoS7TY"
+      title="YouTube video player 4"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+  </iframe>
+</div>
+
+
 
   <div class="cultural-motif">♪ ♫ ♪</div>
   
@@ -1017,9 +1101,29 @@
   <p id="content">The Bagobo are renowned for their intricate woven textiles made from abaca fibers. Their traditional clothing includes:</p>
   <ul>
     <li id="content"><strong>Inabal:</strong> Traditional woven cloth with geometric patterns</li>
+      <div class="inabal-gallery">
+        <img src="Inabal.jpg" alt="Inabal cloth">
+        <img src="Inabal1.jpg" alt="Inabal cloth">
+        <img src="Inabal2.jpg" alt="Inabal cloth">
+      </div>
     <li id="content"><strong>Malong:</strong> Tube skirt worn by both men and women</li>
+    <div class="inabal-gallery">
+        <img src="Malong.png" alt="Malong cloth">
+        <img src="Malong1.png" alt="Malong cloth">
+        <img src="Malong2.jpg" alt="Malong cloth">
+      </div>
     <li id="content"><strong>Accessories:</strong> Beadwork, brass belts, and jewelry made from shells and seeds</li>
+    <div class="inabal-gallery">
+        <img src="Accessories.jpg" alt="Accessories">
+        <img src="Accessories1.jpg" alt="Accessories">
+        <img src="Accessories2.jpg" alt="Accessories">
+      </div>
     <li id="content"><strong>Colors:</strong> Natural dyes from plants produce red, black, and indigo colors</li>
+    <div class="inabal-gallery">
+        <img src="Color.jpg" alt="Malong cloth">
+        <img src="Color1.jpg" alt="Malong cloth">
+        <img src="Color2.jpg" alt="Malong cloth">
+      </div>
   </ul>
   <p id="content">Clothing indicates social status, with more elaborate designs worn by datus (chiefs) and wealthy members of the community.</p>
   
