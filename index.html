@@ -24,20 +24,32 @@
     border-radius: 8px;
     object-fit: cover;
   }
+    
 
-    .video-row {
-      display: flex;
-      justify-content: center;
-      gap: 20px;       /* space between videos */
-      flex-wrap: wrap; /* allows wrapping on small screens */
-      margin: 20px 0;
-    }
+  .video-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  }
 
-    .video-row iframe {
-      width: 48%;      /* two videos side-by-side */
-      height: 250px;   /* adjust height */
-      border-radius: 10px;
-    }
+  .video-item {
+    width: 48%;
+    text-align: center;
+  }
+
+  .video-item iframe {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+  }
+
+  .video-caption {
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: bold;
+  }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
     
@@ -1041,45 +1053,55 @@
 <!-- Embedded YouTube Video -->
 <div class="video-row">
 
-  <!-- Video 1 -->
-  <iframe 
-      src="https://www.youtube.com/embed/QpAEwvM8kUk"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-  </iframe>
+  <div class="video-item">
+    <iframe 
+        src="https://www.youtube.com/embed/QpAEwvM8kUk"
+        title="YouTube video 1"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <div class="video-caption">• Bagobo Rice Cycle Dance</div>
+  </div>
 
-  <!-- Video 2 -->
-  <iframe 
-      src="https://www.youtube.com/embed/7VywvCXO3d0"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-  </iframe>
+  <div class="video-item">
+    <iframe 
+        src="https://www.youtube.com/embed/7VywvCXO3d0"
+        title="YouTube video 2"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <div class="video-caption">• Tud-om Bagobo Chant</div>
+  </div>
 
 </div>
 
-<!-- Row 2 (single or add more videos horizontally) -->
+
 <div class="video-row">
 
-  <!-- Video 3 -->
-  <iframe 
-      src="https://www.youtube.com/embed/Ro6eZX2h9s8"
-      title="YouTube video player 3"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-  </iframe>
+  <div class="video-item">
+    <iframe 
+        src="https://www.youtube.com/embed/Ro6eZX2h9s8"
+        title="YouTube video 3"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <div class="video-caption">• Lalabutan (Barter) Dance</div>
+  </div>
 
-   <iframe 
-      src="https://www.youtube.com/embed/n7xoUOoS7TY"
-      title="YouTube video player 4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-  </iframe>
+  <div class="video-item">
+    <iframe 
+        src="https://www.youtube.com/embed/n7xoUOoS7TY"
+        title="YouTube video 4"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+    <div class="video-caption">• Lawin-Lawin Dance</div>
+  </div>
+
 </div>
 
 
